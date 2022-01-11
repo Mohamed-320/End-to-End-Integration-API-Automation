@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Muhammed/IdeaProjects/untitled">
+        <classes>
+            <class name="reqres.in.CreateUser">
+                <methods>
+                    <include name="createUser"/>
+                </methods>
+            </class>
+            <class name="reqres.in.DeleteUser">
+                <methods>
+                    <include name="deleteUserData"/>
+                </methods>
+            </class>
+            <class name="reqres.in.GetListUsers">
+                <methods>
+                    <include name="retrieveListOfUsersData"/>
+                </methods>
+            </class>
+            <class name="reqres.in.GetSingleUserData">
+                <methods>
+                    <include name="validateSingleUserResponse"/>
+                    <include name="validateSingleUserResponseUsingAssertions"/>
+                </methods>
+            </class>
+            <class name="reqres.in.UpdateUser">
+                <methods>
+                    <include name="updateUserData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
