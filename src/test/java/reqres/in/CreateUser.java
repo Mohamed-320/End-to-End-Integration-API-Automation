@@ -1,8 +1,10 @@
 package reqres.in;
 
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
 import org.json.simple.JSONObject;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
@@ -13,7 +15,7 @@ public class CreateUser {
     @Test
     public void createUser() {
         JSONObject dataProvided = new JSONObject();
-//        Parameter to be added using POST peration
+//        Parameter to be added using POST Operation
         dataProvided.put("name", "morpheus");
         dataProvided.put("job", "leader");
 
