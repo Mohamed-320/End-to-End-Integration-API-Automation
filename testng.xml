@@ -3,14 +3,10 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Muhammed/IdeaProjects/untitled">
         <classes>
-            <class name="reqres.in.CreateUser">
+            <class name="reqres.in.GetSingleUserData">
                 <methods>
-                    <include name="createUser"/>
-                </methods>
-            </class>
-            <class name="reqres.in.DeleteUser">
-                <methods>
-                    <include name="deleteUserData"/>
+                    <include name="validateSingleUserResponse"/>
+                    <include name="validateSingleUserResponseUsingAssertions"/>
                 </methods>
             </class>
             <class name="reqres.in.GetListUsers">
@@ -18,15 +14,19 @@
                     <include name="retrieveListOfUsersData"/>
                 </methods>
             </class>
-            <class name="reqres.in.GetSingleUserData">
+            <class name="reqres.in.CreateUser">
                 <methods>
-                    <include name="validateSingleUserResponse"/>
-                    <include name="validateSingleUserResponseUsingAssertions"/>
+                    <include name="createUser"/>
                 </methods>
             </class>
             <class name="reqres.in.UpdateUser">
                 <methods>
                     <include name="updateUserData"/>
+                </methods>
+            </class>
+            <class name="reqres.in.DeleteUser">
+                <methods>
+                    <include name="deleteUserData"/>
                 </methods>
             </class>
         </classes>
