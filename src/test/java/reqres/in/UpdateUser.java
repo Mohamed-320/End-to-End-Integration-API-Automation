@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.instanceOf;
 
 public class UpdateUser {
     @Test
@@ -27,6 +28,7 @@ public class UpdateUser {
                 then().
                 body("name",equalTo("morpheus"))
                 .body("job", equalTo("zion resident"))
+                .body("updatedAt", instanceOf(String.class))
                 .statusCode(200)
                 .log().all();
     }
