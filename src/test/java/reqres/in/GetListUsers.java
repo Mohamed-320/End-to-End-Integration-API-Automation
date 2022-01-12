@@ -53,7 +53,7 @@ public class GetListUsers {
                 .body("data[5].last_name", equalTo("Howell"))
                 // Validate on the response status code
                 .statusCode(200)
-                // list all the "respose" returned data in the console
+                // list all the "response" returned data in the console
                 .log().all();
     }
 }
